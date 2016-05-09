@@ -1,19 +1,28 @@
 <html>
+
 <head>
     <title> JavaScript Home work session 1</title>
     <script type="text/javascript">
+        function doSubmit() {
+            var email = document.getElementById('email').value;
+            var pwd = document.getElementById("password").value;
+            console.log(email);
+            console.log(pwd);
+        }
     </script>
 </head>
+
 <body>
     <form>
         Email:
-        <input type="text" name="Email:">
+        <input type="text" id="email" name="Email">
         </br>
         </br>
         Password:
-        <input type="text" name="PassWord">
+        <input type="text" id="password" name="PassWord">
         </br>
-        <input type="submit" name="submit" onclick="doSubmit">
+        <input type="submit" name="submit" onclick="doSubmit()">
     </form>
 </body>
+
 </html>
